@@ -9,6 +9,7 @@ Tech Stack:
   - React.Js
   - Tailwind CSS
   - Redux Toolkit
+  - Axios
   - ANT Design
   - React-Router
   - Chart.Js
