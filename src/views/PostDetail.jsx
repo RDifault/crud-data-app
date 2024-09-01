@@ -5,7 +5,7 @@ import { Button, Modal } from "antd";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { deletePost } from "../state/apiSlice";
-import { ExclamationCircleOutlined } from "@ant-design/icons";
+import { ExclamationCircleOutlined, ArrowLeftOutlined } from "@ant-design/icons";
 const { confirm } = Modal;
 
 export default function PostDetail() {
@@ -13,7 +13,7 @@ export default function PostDetail() {
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.api.posts);
   const post = posts.find((post) => post.id === parseInt(id));
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const showConfirmDelete = (id) => {
     confirm({
@@ -38,10 +38,17 @@ export default function PostDetail() {
   return (
     <>
       <Header />
-
+      <div className=" flex flex-col justify-center items-center">
+      <Link to={"/crud-data-app"} className="self-start mb-4 mt-12 ml-8 md:ml-24">
+        <Button className="" icon={<ArrowLeftOutlined />}>
+          Back
+        </Button>
+      </Link>
       <p className="text-2xl text-black font-[600] text-center my-8">
         Post Detail
       </p>
+      </div>
+      
       <div className=" text-black flex flex-col items-center">
         <div className="w-[80vw] lg:w-[800px]">
           <p className="text-lg font-[600] mb-2">
