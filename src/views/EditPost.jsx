@@ -49,7 +49,7 @@ export default function EditPost() {
             Back
           </Button>
         </Link>
-        <div className="w-[500px] flex flex-col items-center p-12 md:mt-14">
+        <div className="w-[80vw] md:w-[500px] flex flex-col items-center p-12 md:mt-14">
           <p className="text-2xl text-black font-[600] pb-8">Edit Post {post?.id}</p>
           <Form
             form={form}
