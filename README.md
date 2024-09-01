@@ -15,5 +15,5 @@ Tech Stack:
   - React-ChartJs-2
   - Vite
 
-Disclaimer: The API used is a simulation/fake API. Which means, any CRUD operations done will be reset if the web is refresehed.
+Disclaimer: The API used is a simulation/fake API. Which means, any CRUD operations done will be reset if the web is refreshed.
 Use the built-in navigation to navigate the web without refreshing it to see the whole CRUD operations
